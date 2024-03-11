@@ -14,7 +14,7 @@ public class NotificarRabbitService {
         this.rabbitTemplate = rabbitTemplate;
     }
 
-    @Value("${rabbitmq.exchange.proposta-pendent}")
+    @Value("${rabbitmq.exchange.proposta-pendente}")
     private String exchangePropostaPendente;
 
     public void notificar(Proposta proposta){
