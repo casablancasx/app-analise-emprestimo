@@ -26,8 +26,6 @@ public interface PropostaMapper {
     @Mapping(target = "observacao",ignore = true)
     Proposta mapDtoToEntity(PropostaRequestDto requestDto);
 
-
-
     @Mapping(source = "usuario.nome" , target = "nome")
     @Mapping(source = "usuario.sobrenome" , target = "sobrenome")
     @Mapping(source = "usuario.telefone" , target = "telefone")

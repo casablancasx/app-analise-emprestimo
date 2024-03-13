@@ -25,7 +25,7 @@ public class Proposta {
 
 
     @OneToOne(cascade = CascadeType.ALL)
-    @JoinColumn(name = "cliente_id")
+    @JoinColumn(name = "usuario_id")
     @JsonManagedReference
     private Usuario usuario;
 }
