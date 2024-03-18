@@ -22,6 +22,6 @@ public class PropostaConcluidaListener {
     @RabbitListener(queues = "${rabbitmq.queue.proposta-conluida.app-proposta}")
     public void propostaConcluida(Proposta proposta){
         repository.save(proposta);
-        webSocketService.notificar(PropostaMapper.INSTANCE.mapEntityToDto(proposta));
+//        webSocketService.notificar(PropostaMapper.INSTANCE.mapEntityToDto(proposta));
     }
 }
